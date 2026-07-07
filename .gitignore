@@ -1,0 +1,32 @@
+# ---- Secrets (never commit these) ----
+.env
+.env.local
+*.env
+!.env.example
+
+# ---- Python (backend) ----
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# ---- App-generated data (regenerated on upload, don't commit) ----
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+backend/storage/vectorstores/*
+!backend/storage/vectorstores/.gitkeep
+backend/storage/documents.json
+
+# ---- Node / React (frontend) ----
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
